@@ -1,0 +1,29 @@
+body {
+    width: 1300;
+    height: 4000px;
+}
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid white;
+    height: 797px;
+}
+
+.img {
+    background-image: url(images/foods.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.main {
+    height: 3700px;
+    margin: 0px 200px;
+    background-color: black;
+    border-bottom: 3px solid white
+}
+
+.bottom {
+    height: 150px;
+    margin: 0px 200px;
+    background-color: black;
+}
