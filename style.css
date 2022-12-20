@@ -243,7 +243,12 @@ h3 {
 
 .bottom {
     height: 150px;
-    background-color: black;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Century Gothic';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
