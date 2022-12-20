@@ -1,29 +1,245 @@
 body {
     width: 1300;
     height: 4000px;
+    overflow-x: hidden;
 }
 
 .header {
     background-color: black;
-    border-bottom: 3px solid white;
-    height: 797px;
+    height: 792px;
 }
 
+.logo {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 163px;
+    height: 94px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .img {
     background-image: url(images/foods.jpg);
     background-size: cover;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.main {
-    height: 3700px;
-    margin: 0px 200px;
-    background-color: black;
-    border-bottom: 3px solid white
+.grid {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 65%;
+}
+
+.start {
+    opacity: 0;
+    transform: translateY(100%);
+    position: sticky;
+    top:90%;
+    margin-left: 95%;
+    height: 0px;
+    z-index: 4;
+}
+
+.start.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+.object {
+    color: white;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    padding: 15px;
+    border-top: 2px solid white;
+}
+
+a.menu {
+    color: white;
+    text-decoration: none;
+}
+
+.about-us {
+    height: 792px;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: repeat(1,1fr);
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+}
+.products {
+    height: 792px;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.cake {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Gerbera'
+}
+
+.partners {
+    height: 792px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.careers {
+    height: 792px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+}
+
+.celebrate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-left: 9%;
+}
+
+.contacts {
+    height: 792px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ann {
+    height: 100%;
+}
+
+.aboutme {
+    font-family: 'Century Gothic';
+    padding-left: 50px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.vk {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.marriage {
+    width: 760px;
+    height: 792px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+}
+.reviews {
+    height: 792px;
+    background-image: url(images/reviews.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-block-1 {
+    width: 350px;
+    height: 600px;
+    border-right: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-block-2 {
+    width: 350px;
+    height: 708px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-block-3 {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px white solid;
+}
+
+.new {
+    width: 350px;
+    height: 600px;
+    background-color: darkgrey;
+}
+
+.news {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.rect {
+    background-color: rgb(233, 233, 233);
+    height: 75px;
+    width: 350px;
+}
+
+.photo {
+    padding-top: 30px;
+    width: 300px; 
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review {
+    padding-top: 10px;
+    text-align: center;
 }
 
 .bottom {
     height: 150px;
-    margin: 0px 200px;
     background-color: black;
+}
+
+@font-face {
+	font-family: Gerbera; 
+	src: local(Gerbera),
+		url(/fonts/Gerbera.ttf); 
 }
