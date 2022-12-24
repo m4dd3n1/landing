@@ -56,16 +56,40 @@ body {
 }
 
 .object {
-    color: white;
     font-family: 'Century Gothic';
     text-transform: uppercase;
     padding: 15px;
     border-top: 2px solid white;
+    transition: 1s;
 }
 
 a.menu {
     color: white;
     text-decoration: none;
+}
+
+.object:hover {
+    color: black;
+    background: rgb(193, 84, 84);
+}
+
+.scale {
+    transition: 1s;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.scale1 {
+    transition: 1s;
+}
+
+.scale1:hover {
+    transform: scale(1.1);
 }
 
 a.newa {
@@ -93,7 +117,7 @@ h3 {
 .products {
     height: 792px;
     width: 100%;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(255, 244, 244);
 }
 
 .list {
@@ -101,12 +125,32 @@ h3 {
     justify-content: center;
 }
 
+.order {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Century Gothic';
+    border-radius: 10px;
+    background-color: rgb(193, 84, 84);
+    color: white;
+    transition: 1s;
+}
+
+.order:hover {
+    background-color: white;
+    color: black;
+}
+
 .cake {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-family: Gerbera'
+    padding: 0px 20px 0px 20px;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
 }
 
 .partners {
